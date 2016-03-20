@@ -1,0 +1,102 @@
+.titlebar { height: 5px; }
+
+.guild-header header {
+	height: 46px;
+	font-size: 15px;
+}
+
+.guild-header header span { line-height: 46px; }
+
+.guild-header header button { margin-top: -2px; }
+
+.guild-header ul { top: 46px; }
+
+.guild-header ul a {
+	margin: 5px 6px;
+	padding: 8px 11px;
+	opacity: .5;
+}
+
+.guild-header ul a.red-highlight {
+	color: #FF3E3E;
+	opacity: .9;
+}
+
+.guild-channels { padding: 10px 0; }
+
+.guild-channels header h2 {
+	font-size: 14px;
+	opacity: .4;
+	text-align: center;
+	padding: 0;
+	padding-right: 10px;
+}
+
+.guild-channels ul .channel { line-height: 1rem; }
+
+.guild-channels .toggle-muted-text-channels { padding-left: 20px; }
+
+.guild-channels ul .channel-voice { padding: 4px 6px 8px 20px; }
+
+.guild-channels ul .channel-voice-states {
+	margin-top: 5px;
+	padding-left: 10px;
+}
+
+.account { height: 50px; }
+
+.account .account-details { padding: 0 7px; }
+
+.account .account-details .username { max-width: 85px; }
+
+.account .btn { width: 28px; }
+
+.chat>.title-wrap { padding: 0px 10px; }
+
+.theme-dark .chat .title-wrap .topic { color: #979C9E; }
+
+.channel-members { padding: 10px 0; }
+
+.channel-members h2 {
+	font-size: 14px;
+	text-align: center;
+}
+
+.channel-members .member {
+	padding: 5px 20px;
+	font-weight: 500;
+	padding-right: 5px;
+}
+
+.channel-members .member .member-inner { width: 155px; }
+
+.theme-dark .channel-members h2 { color: hsla(0,0%,100%,.6); }
+
+.avatar-small { border-radius: 10px; }
+
+.channel-textarea { margin: 10px 0 30px; }
+
+.message-group { padding: 15px 0; }
+
+.avatar-large { border-radius: 10px; }
+
+.message-group h2 strong { font-weight: 500; }
+
+.message-group h2 .timestamp { font-size: 14px; }
+
+.theme-dark .hljs { padding: .3em; }
+
+.guilds li.unread .guild-inner:before { background: #ADB2B9; }
+
+.private-channels .channel.btn-friends { margin-bottom: 10px; }
+
+.private-channels .channel .channel-name { opacity: .5; }
+
+.private-channels header {
+	opacity: .7;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.private-channels .channel a { height: 40px; }
