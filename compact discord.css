@@ -10,7 +10,10 @@
 
 .guild-header header button { margin-top: -2px; }
 
-.guild-header ul { top: 46px; }
+.guild-header ul {
+	top: 46px;
+	margin-top: 10px;
+}
 
 .guild-header ul a {
 	margin: 5px 6px;
@@ -63,6 +66,10 @@
 	text-align: center;
 }
 
+.channel-members .member+h2 { margin: 15px 0; }
+
+.theme-dark .channel-members h2 { color: hsla(0,0%,100%,.8); }
+
 .channel-members .member {
 	padding: 5px 20px;
 	font-weight: 500;
@@ -75,9 +82,11 @@
 
 .avatar-small { border-radius: 10px; }
 
-.channel-textarea { margin: 20px 0 30px; }
+.channel-textarea { margin: 10px 0 30px; }
 
 .message-group { padding: 15px 0; }
+
+.message-group:last-child { margin-bottom: 10px; }
 
 .avatar-large { border-radius: 10px; }
 
