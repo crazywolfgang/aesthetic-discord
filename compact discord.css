@@ -3,7 +3,7 @@
 .guild-header header {
 	height: 46px;
 	font-size: 15px;
-	padding: 0 24px;
+	padding: 0 18px;
 }
 
 .guild-header header span { line-height: 46px; }
@@ -35,6 +35,8 @@
 	padding: 0;
 	padding-right: 10px;
 }
+
+.guild-channels ul { padding-left: 0; }
 
 .guild-channels ul .channel { line-height: 1rem; }
 
@@ -104,3 +106,77 @@
 }
 
 .private-channels .channel a { height: 40px; }
+
+#user-profile-modal {
+	width: 480px;
+	height: 640px;
+}
+
+#user-profile-modal .header .username .name { max-width: 200px; }
+
+#user-profile-modal .header .username .discriminator {
+	font-size: 18px;
+	color: hsla(0,0%,100%,.6);
+}
+
+#user-profile-modal .header .game {
+	color: hsla(0,0%,100%,.6);
+}
+
+#user-profile-modal .avatar-profile {
+	left: 16px;
+	top: 30px;
+}
+
+.avatar-profile { border-radius: 25%; }
+
+#user-profile-modal .avatar-profile .status {
+	bottom: -7px;
+	right: -9px;
+}
+
+#user-profile-modal .sub-header {
+	height: 80px;
+	padding: 10px 25px 0 168px;
+}
+
+#user-profile-modal .btn { width: 295px; }
+
+#user-profile-modal .guilds .guild { padding: 3px 20px; }
+
+#user-profile-modal .guilds .guild .discriminator {
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+.context-menu { margin-left: 20px; }
+
+.theme-dark .friends-table .messages .message-group .comment .edited, .theme-dark .messages-wrapper .messages .message-group .comment .edited { color: hsla(0,0%,100%,.3); }
+
+#user-profile-modal { border-radius: 5px; }
+
+.channel-notification-settings .content { height: 45px; }
+
+.avatar-uploader .avatar-uploader-inner { 25%; }
+
+.user-settings-modal-keybinds .user-settings-modal-keybinds-list .keybind+.keybind { padding: 15px 0 0; }
+
+.form .control-groups.control-separator {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.instant-invites .instant-invites-list .instant-invite { height: 50px; }
+
+.settings .settings-inner .settings-panel-header {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.guild-settings-modal-members .guild-settings-modal-list .member .avatar-small { margin: 10px 20px 10px 0; }
+
+#settings-roles .roles li {
+	line-height: 29px;
+	min-height: 29px;
+	padding: 0 29px;
+}
