@@ -62,9 +62,26 @@
 
 .account .btn { width: 28px; }
 
-.chat>.title-wrap { padding: 6px 20px; }
+.win-buttons {
+	top: 8px;
+	right: 18px;
+}
+
+.chat>.title-wrap {
+	padding: 4px 20px;
+	min-height: 47px;
+}
 
 .theme-dark .chat .title-wrap .topic { color: #979C9E; }
+
+.theme-dark .topic-preview .hljs,
+.theme-dark .scroller .hljs {
+	background: rgba(29, 29, 29, 0.45);
+	border-radius: 5px;
+	padding: .3em;
+}
+
+.chat>.title-wrap>.topic .scroller-wrap { max-height: 250px; }
 
 .channel-members { padding: 10px 0; }
 
@@ -97,7 +114,7 @@
 
 .message-group h2 .timestamp { font-size: 14px; }
 
-.theme-dark .friends-table .messages .mentioned .message-text, .theme-dark .messages-wrapper .messages .mentioned .message-text { background: rgba(79, 176, 232, 0.1)); }
+.theme-dark .friends-table .messages .mentioned .message-text, .theme-dark .messages-wrapper .messages .mentioned .message-text { background: rgba(79, 176, 232, 0.1); }
 
 .message-group .mentioned .message-text:after {
 	background: rgba(53, 163, 216, 0.2);
@@ -143,8 +160,8 @@
 .avatar-profile { border-radius: 25%; }
 
 #user-profile-modal .avatar-profile .status {
-	bottom: -7px;
-	right: -9px;
+	bottom: -6px;
+	right: -8px;
 }
 
 #user-profile-modal .sub-header {
@@ -192,3 +209,9 @@
 	min-height: 29px;
 	padding: 0 29px;
 }
+
+.form .control-groups+.control-group, .form .control-groups+.control-groups { margin-top: 5px; }
+
+#settings-roles .selected-role .control-group { margin-bottom: 0; }
+
+.settings .settings-actions { padding: 12px 40px; }
