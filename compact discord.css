@@ -78,7 +78,6 @@
 .theme-dark .scroller .hljs {
 	background: rgba(29, 29, 29, 0.45);
 	border-radius: 5px;
-	padding: .3em;
 }
 
 .chat>.title-wrap>.topic .scroller-wrap { max-height: 250px; }
