@@ -37,7 +37,7 @@
 	padding-top: 10px;
 }
 
-.guild-channels ul+header { margin-top 0; }
+.guild-channels ul+header { margin-top: 0; }
 
 .guild-channels ul { padding-left: 0; }
 
@@ -186,7 +186,7 @@
 
 .channel-notification-settings .content { height: 45px; }
 
-.avatar-uploader .avatar-uploader-inner { 25%; }
+.avatar-uploader .avatar-uploader-inner { border-radius: 25%; }
 
 .user-settings-modal-keybinds .user-settings-modal-keybinds-list .keybind+.keybind { padding: 15px 0 0; }
 
