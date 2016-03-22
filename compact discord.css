@@ -97,6 +97,13 @@
 
 .message-group h2 .timestamp { font-size: 14px; }
 
+.theme-dark .friends-table .messages .mentioned .message-text, .theme-dark .messages-wrapper .messages .mentioned .message-text { background: rgba(79, 176, 232, 0.1)); }
+
+.message-group .mentioned .message-text:after {
+	background: rgba(53, 163, 216, 0.2);
+	border-left: 4px solid #3487CE;
+}
+
 .guilds li.unread .guild-inner:before { background: #ADB2B9; }
 
 .private-channels .channel.btn-friends { margin-bottom: 10px; }
