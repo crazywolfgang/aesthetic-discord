@@ -83,7 +83,7 @@
 .links li+li:before { color: #808388; }
 
 .win-buttons {
-	top: 8px;
+	top: -6px;
 	right: 18px;
 }
 
@@ -241,18 +241,11 @@
 
 .theme-dark .friends-table .messages .divider.divider-red>span, .theme-dark .messages-wrapper .messages .divider.divider-red>span { color: #6B97F9; }
 
+.theme-dark .friends-table .messages .message-group .comment .markup code.inline, .theme-dark .friends-table .messages .message-group .comment .markup pre code, .theme-dark .messages-wrapper .messages .message-group .comment .markup code.inline, .theme-dark .messages-wrapper .messages .message-group .comment .markup pre code { background: #2D2E2F; }
 
+.theme-dark .friends-table .messages .message-group .comment .markup pre, .theme-dark .messages-wrapper .messages .message-group .comment .markup pre { border-color: #4C4C4C; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.bot-tag {
+	background: #202227;
+	font-size: 11px
+}
