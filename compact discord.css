@@ -1,6 +1,6 @@
 .titlebar { height: 5px; }
 
-.guilds li+li {
+.guilds-wrapper .guilds .guild+.guild {
 	margin-top: -5px;
 }
 
@@ -33,31 +33,34 @@
 
 .guild-channels { padding: 10px 0; }
 
-.guild-channels header h2 {
+.guild-channels header {
+	margin-top: 5px;
+}
+
+.guild-channels header span {
 	font-size: 14px;
-	opacity: .4;
+	opacity: 1;
 	text-align: center;
 	padding: 0;
 	padding-right: 10px;
-	padding-top: 10px;
 }
 
-.guild-channels ul+header { margin-top: 0; }
+.guild-channels div+header { margin-top: 0; }
 
-.guild-channels ul { padding-left: 0; }
+.guild-channels div { padding-left: 0; }
 
-.guild-channels ul .channel { line-height: 1rem; }
+.guild-channels .channel { line-height: 1rem; }
 
 .guild-channels .toggle-muted-text-channels { padding-left: 20px; }
 
-.guild-channels ul .channel-voice { padding: 4px 6px 8px 20px; }
+.guild-channels .channel-voice { padding: 4px 6px 8px 20px; }
 
-.guild-channels ul .channel-voice-states {
+.guild-channels .channel-voice-states {
 	margin-top: 5px;
 	padding-left: 10px;
 }
 
-.guild-channels ul .channel-voice-states li .avatar-small { border-radius: 30%; }
+.guild-channels .channel-voice-states li .avatar-small { border-radius: 30%; }
 
 .account {
 	height: 50px;
