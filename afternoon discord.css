@@ -14,7 +14,7 @@
 	margin-top: -5px
 }
 
-.guilds-wrapper .guilds.add {
+.guilds-wrapper .guilds-add {
 	background: #2a2f38
 }
 
@@ -199,6 +199,10 @@
 	color: #5294E2
 }
 
+.theme-dark .chat .content {
+	background: #333842
+}
+
 .theme-dark .chat .content .channel-members-wrap .channel-members {
 	background-color: #333842;
 	padding: 10px 0
@@ -257,13 +261,18 @@
 	border-left-color: #2a2f38
 }
 
-.theme-dark .chat .content .form .control-groups.control-separator {
-	margin-top: 20px;
-	padding-top: 20px
+.theme-dark .chat .content form .channel-textarea-inner {
+	border-color: #2a2f38;
+	background: #333842
 }
 
-.theme-dark .chat .content .form .control-groups+.control-group {
-	margin-top: 5px
+.theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload {
+	background-color: #333842;
+	border-right: 2px solid #2a2f38
+}
+
+.theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload:hover {
+	background-color: #2a2f38
 }
 
 .message-group a {
