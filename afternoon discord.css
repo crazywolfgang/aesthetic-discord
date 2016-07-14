@@ -91,9 +91,12 @@
 	top: 10px
 }
 .channels-wrap .guild-channels .channel-text.selected,
-.channels-wrap .guild-channels .channel-text:hover {
+.channels-wrap .guild-channels .channel-text.channel-text:hover {
 	background: -webkit-linear-gradient(90deg, #2a2f38, #333842 95%);
 	background: linear-gradient(90deg, #2a2f38, #333842 95%)
+}
+.channels-wrap .guild-channels .channel-text a {
+	padding: 7px 6px 9px 20px
 }
 .channels-wrap .guild-channels .channel-text.unread:not(.selected):not(.channel-muted):before {
 	border-left: 0
@@ -104,6 +107,9 @@
 }
 .channels-wrap .guild-channels .toggle-muted-text-channels {
 	padding-left: 20px
+}
+.channels-wrap .guild-channels .channel-user-limit {
+	margin-top: 0
 }
 .account {
 	height: 50px;
@@ -144,6 +150,9 @@
 }
 .highlight {
 	color: #5294E2
+}
+.highlight:hover {
+	background-color: rgba(51, 107, 191, 0.7)
 }
 .win-buttons {
 	top: -6px;
@@ -236,19 +245,39 @@
 .theme-dark .chat .content .messages-wrapper .messages .message-group .comment .markup .highlight {
 	background-color: rgba(68, 136, 220, 0.1)
 }
+.theme-dark .chat .content .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
+	background-color: rgba(51, 107, 191, 0.7)
+}
+.theme-dark .chat .content .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+	background: #2a2f38
+}
+.theme-dark .chat .content .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+	background: #21262f
+}
+.theme-dark .chat .content .messages-wrapper .messages .message-group-blocked.revealed {
+	background: #2a2f38
+}
+.theme-dark .chat .content .messages-wrapper .messages .invite-button {
+	background-color: #2a2f38
+}
+.theme-dark .chat .content form {
+	border-top: none;
+	box-shadow: none
+}
 .theme-dark .chat .content form .typing {
-	background-color: #333842
+	background-color: transparent
 }
 .theme-dark .chat .content form .channel-textarea-inner {
-	border-color: #2a2f38;
-	background: #333842
+	border-color: #333842;
+	background: #333842;
+	box-shadow: 0 5px 20px #21262f
 }
 .theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload {
 	background-color: #333842;
-	border-right: 2px solid #2a2f38
+	border-right: 2px solid #333842
 }
 .theme-dark .chat .content form .channel-textarea-inner .channel-textarea-upload:hover {
-	background-color: #2a2f38
+	background-color: #333842
 }
 .message-group a {
 	color: #5294E2 !important
@@ -257,14 +286,14 @@
 	background-color: #333842;
 	height: 46px
 }
-.theme-dark .friends-table {
+.theme-dark #friends .friends-table {
 	background-color: #333842;
 	margin-top: 0
 }
-.theme-dark .friends-table .friends-row {
+.theme-dark #friends .friends-table .friends-row {
 	height: 55px !important
 }
-.theme-dark .friends-table .friends-row:hover {
+.theme-dark #friends .friends-table .friends-row:hover {
 	background: #2a2f38
 }
 .private-channels {
@@ -279,14 +308,17 @@
 .private-channels .channel a {
 	height: 40px
 }
-.private-channels .channel.selected,
-.private-channels .channel.hover {
+.private-channels .channel:hover,
+.private-channels .channel.selected {
 	background: -webkit-linear-gradient(90deg, #2a2f38, #333842 95%);
 	background: linear-gradient(90deg, #2a2f38, #333842 95%)
 }
-.private-channels .channel.selected:before,
-.private-channels .channel.hover:before {
+.private-channels .channel:hover:before,
+.private-channels .channel.selected:before {
 	border-left: 0
+}
+.private-channels .channel .icon-friends {
+	border-radius: 25%
 }
 .private-channels header {
 	opacity: .7;
@@ -294,9 +326,13 @@
 	font-weight: 600;
 	text-align: center
 }
-.search-bar {
+.private-channels .search-bar {
 	background-color: #333842;
 	height: 47px
+}
+.private-channels .search-bar input {
+	background: #2a2f38;
+	border: 1px solid #21262f
 }
 #user-profile-modal {
 	width: 480px;
