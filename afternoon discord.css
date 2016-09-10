@@ -33,22 +33,23 @@
 .channels-wrap .guild-header ul {
 	background: #2a2f38;
 	top: 47px;
-	padding: 3px 0;
-	border-radius: 0 0 5px 0
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 0 0 5px 5px
 }
 .channels-wrap .guild-header ul li a {
-	margin: 5px 6px;
-	padding: 8px 11px;
-	opacity: .5
+	opacity: .8
 }
-.channels-wrap .guild-header ul li a.red-highlight {
-	color: #FF3E3E;
-	opacity: .9;
-	font-weight: 700;
-	letter-spacing: .6px
+.channels-wrap .guild-header ul li.leave a {
+	opacity: .9
+}
+.channels-wrap .guild-header ul li:hover {
+	background: #333842
 }
 .channels-wrap .guild-header ul li:hover a {
 	background: #333842
+}
+.channels-wrap .guild-header ul .line {
+	border-bottom: 1px solid rgba(216, 216, 216, 0.1)
 }
 .channels-wrap .guild-header.guild-header-open header {
 	background-color: #2a2f38
@@ -225,7 +226,9 @@
 	background: #6B97F9
 }
 .theme-dark .chat .content .messages-wrapper .messages .divider.divider-red>span {
-	color: #6B97F9;
+	color: #6B97F9
+}
+.theme-dark .chat .content .messages-wrapper .messages .divider span {
 	background-color: transparent
 }
 .theme-dark .chat .content .messages-wrapper .messages .message-group {
@@ -249,6 +252,11 @@
 }
 .theme-dark .chat .content .messages-wrapper .messages .message-group .comment .markup .highlight:hover {
 	background-color: rgba(51, 107, 191, 0.7)
+}
+.theme-dark .chat .content .messages-wrapper .messages .message-group.is-local-bot-message {
+	background: transparent;
+	box-shadow: none;
+	border-bottom-color: rgba(255, 255, 255, 0.04)
 }
 .theme-dark .chat .content .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
 	background: #2a2f38
@@ -453,12 +461,12 @@
 .scroller-wrap .scroller.messages::-webkit-scrollbar {
 	width: 10px !important
 }
-.scroller-wrap *::-webkit-scrollbar-thumb {
+.scroller-wrap ::-webkit-scrollbar-thumb {
 	background-color: #222529 !important;
 	border: none !important;
 	border-radius: 4px !important
 }
-.scroller-wrap *::-webkit-scrollbar-track-piece {
+.scroller-wrap ::-webkit-scrollbar-track-piece {
 	background-color: transparent !important;
 	border-color: transparent !important;
 	border: none !important
